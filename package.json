@@ -1,15 +1,9 @@
 {
-  "name": "eio.mqtt",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://msp-wbench.wesp.telekom.net/gitlab/msp-team/eio.mqtt.git"
-  },
-  "author": "",
-  "license": "ISC"
+    "name": "eio.mqtt",
+    "version": "1.0.0",
+    "dependencies": {
+        "async-mqtt": "^2.5.0",
+        "elasticio-node": "0.0.9",
+        "elasticio-sailor-nodejs": "^2.2.1"
+    }
 }

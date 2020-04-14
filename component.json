@@ -1,0 +1,57 @@
+{
+    "title": "MQTT Connector",
+    "description": "Connector for machine-to-machine(M2M) connectivity protocol",
+    "credentials": {
+        "fields": {
+            "brokerUrl": {
+                "label": "Broker URL",
+                "required": true,
+                "viewClass": "TextFieldView",
+                "note": "Please use <code><b>protocol:host:port</b></code> format. Supported protocols: mqtt, mqtts, tcp, tls, ws, wss. Port is optional."
+            },
+            "username": {
+                "label": "Username",
+                "required": false,
+                "viewClass": "TextFieldView"
+            },
+            "password": {
+                "label": "Password",
+                "required": false,
+                "viewClass": "PasswordFieldView"
+            },
+            "caCertificates": {
+                "label": "CA Certificate(s)",
+                "required": false,
+                "viewClass": "TextAreaView",
+                "note": "Please enter one or more CA certificates in PEM format."
+            },
+            "dontCheckBrokerCertificate": {
+                "label": "Do not check broker certificate (unsafe)",
+                "viewClass": "CheckBoxView"
+            }
+        }
+    },
+    "docsUrl": "",
+    "url": "",
+    "envVars": {},
+    "triggers": {
+        "realtimeMessages": {
+            "main": "./lib/triggers/realtimeMessages.js",
+            "type": "polling",
+            "title": "Retrieve messages from a broker (only for REALTIME flows)",
+            "fields": {
+                "topics": {
+                    "label": "Topics",
+                    "required": true,
+                    "viewClass": "TextAreaView",
+                    "note": "Please separate multiple topics by spaces or newlines."
+                }
+            },
+            "metadata": {
+                "out": {
+                    "type": "object"
+                }
+            }
+        }
+    }
+}
