@@ -21,3 +21,6 @@ The first step in using MQTT connector is configuring the credentials
 ### triggers:
 * startFlow → basic trigger for starting a flow instance
 * realtimeMessages → trigger for receiving messages from subscribed topics in real-time; it is required to set flow type to real-time
+
+### actions:
+* publishMessage → action for publishing a message to a specific topic

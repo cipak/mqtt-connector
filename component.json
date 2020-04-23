@@ -53,5 +53,16 @@
                 }
             }
         }
+    },
+    "actions": {
+        "publishMessage": {
+            "main": "./lib/actions/publishMessage",
+            "title": "Publish message to a topic",
+            "fields": {},
+            "metadata": {
+                "in": "./lib/schemas/publishMessage.in.json",
+                "out": "./lib/schemas/publishMessage.out.json"
+            }
+        }
     }
 }

@@ -1,0 +1,15 @@
+{
+    "type": "object",
+    "properties": {
+        "topic": {
+            "title": "Topic",
+            "required": true,
+            "type": "string"
+        },
+        "message": {
+            "title": "Message",
+            "required": true,
+            "type": "string"
+        }
+    }
+}
