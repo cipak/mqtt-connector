@@ -1,8 +1,6 @@
-![MQTT Connector logo](logo.png "MQTT logo")
+# ![LOGO](logo.png) MQTT **flow**ground Connector
 
-# MQTT Connector
-
-[MQTT](http://mqtt.org/) connector for the [Flowground plattform](https://app.flowground.net/ "Flowground platform")
+[MQTT](http://mqtt.org/) connector for the [flowground platform](https://app.flowground.net/ "flowground platform")
 
 > [MQTT](http://mqtt.org/) is a connectivity protocol for machine-to-machine(M2M)/"Internet of Things"
 
@@ -19,8 +17,16 @@ The first step in using MQTT connector is configuring the credentials
 
 ## Using the connector
 ### triggers:
-* startFlow → basic trigger for starting a flow instance
 * realtimeMessages → trigger for receiving messages from subscribed topics in real-time; it is required to set flow type to real-time
 
 ### actions:
 * publishMessage → action for publishing a message to a specific topic
+
+## License
+
+**flow**ground :- Telekom iPaaS / mqtt-connector<br/>
+Copyright © 2020, [Deutsche Telekom AG](https://www.telekom.de)<br/>
+contact: https://flowground.net/en/support-and-contact
+
+All files of this connector are licensed under the Apache 2.0 License. For details
+see the file LICENSE on the top-level directory.
