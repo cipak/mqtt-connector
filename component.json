@@ -1,6 +1,7 @@
 {
     "title": "MQTT Connector",
     "description": "Connector for machine-to-machine(M2M) connectivity protocol",
+    "buildType": "docker",
     "credentials": {
         "fields": {
             "brokerUrl": {
