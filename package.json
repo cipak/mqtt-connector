@@ -1,6 +1,9 @@
 {
     "name": "mqtt-connector",
     "version": "1.0.0",
+    "engines": {
+      "node": "14"
+    },
     "dependencies": {
         "async-mqtt": "^2.5.0",
         "elasticio-node": "0.0.9",
